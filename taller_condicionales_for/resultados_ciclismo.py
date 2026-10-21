@@ -10,5 +10,10 @@ if N >= 1 and N <= 20:
         if id >= 0 and min >= 0 and sec >= 0 and sec <= 59 and cent >= 0 and cent <= 99:
             tiempo = 60 * min + sec + cent / 100
             velocidad = 900 / tiempo
-    print(id, velocidad, "Km/h")
+            print("La velocidad del ciclista es: ", velocidad, "Km/h")
+            if k == 0 or tiempo < menor_tiempo:
+                menor_tiempo = tiempo
+                ganador = id
+    print("Ganador: ", ganador)
+
     
